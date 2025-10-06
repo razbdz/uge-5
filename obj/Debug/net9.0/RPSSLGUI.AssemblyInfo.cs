@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPSSLGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e0746213d877b79bdae395d71f498f374bd9d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPSSLGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPSSLGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,68 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RPSSLGUI.MainWindow"
+        Title="RPSSL Game - Først til 3 point"
+        Width="520" Height="360"
+        Background="#FAFAFA">
+
+    <DockPanel Margin="14">
+
+        <!-- Titel øverst -->
+        <TextBlock DockPanel.Dock="Top"
+                   Text=" Rock •  Paper •  Scissors •  Lizard •  Spock"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="#333"
+                   TextAlignment="Center"
+                   Margin="0,4,0,10"/>
+
+        <!-- Bundpanel: kontrolknapper -->
+        <StackPanel DockPanel.Dock="Bottom"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Spacing="10"
+                    Margin="0,8,0,0">
+            <Button x:Name="BtnReset" Content=" Nulstil spil" Width="120"/>
+            <Button x:Name="BtnClose" Content=" Luk program" Width="120"/>
+        </StackPanel>
+
+        <!-- Midterområde -->
+        <Grid RowDefinitions="Auto,Auto,*,Auto" ColumnDefinitions="*">
+            
+            <!-- Informationsblok -->
+            <StackPanel Grid.Row="0" Margin="0,0,0,8">
+                <TextBlock x:Name="RoundText"
+                           Text="Tryk på en figur for at starte spillet"
+                           FontWeight="SemiBold"
+                           Foreground="#444"/>
+                <TextBlock x:Name="ChoicesText"
+                           Text="Spiller: -   |   Computer: -"
+                           Margin="0,4,0,0"
+                           Foreground="#666"/>
+                <TextBlock x:Name="ScoreText"
+                           Text="Stilling — Spiller: 0 | Computer: 0"
+                           FontWeight="Bold"
+                           Margin="0,6,0,0"
+                           Foreground="#222"/>
+            </StackPanel>
+
+            <!-- Knapper i gridlayout -->
+            <UniformGrid Grid.Row="1" Rows="2" Columns="3" Margin="0,8,0,8" HorizontalAlignment="Center">
+                <Button x:Name="BtnRock"     Content=" Rock" Width="110" Height="36"/>
+                <Button x:Name="BtnPaper"    Content=" Paper" Width="110" Height="36"/>
+                <Button x:Name="BtnScissors" Content=" Scissors" Width="110" Height="36"/>
+                <Button x:Name="BtnLizard"   Content=" Lizard" Width="110" Height="36"/>
+                <Button x:Name="BtnSpock"    Content=" Spock" Width="110" Height="36"/>
+            </UniformGrid>
+
+            <!-- Separator og status -->
+            <Separator Grid.Row="2" Margin="0,4"/>
+            <TextBlock Grid.Row="3" Text="Først til 3 point vinder "
+                       HorizontalAlignment="Center"
+                       Foreground="#555"
+                       FontStyle="Italic"/>
+        </Grid>
+    </DockPanel>
+</Window>
+
+
